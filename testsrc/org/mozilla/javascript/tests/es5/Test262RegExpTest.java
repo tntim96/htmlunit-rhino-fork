@@ -106,14 +106,14 @@ public class Test262RegExpTest {
     @Test
     public void testS15_10_4_1_T1() {
         String source = "new RegExp().test('AA');";
-        String sourceName = "Conformance/15_Native/15.10_RegExp_Objects/15.10.4_Pattern_Semantics/15.10.2.11_DecimalEscape/S15.10.2.11_A1_T3.js";
+        String sourceName = "Conformance/15_Native/15.10_RegExp_Objects/15.10.4_Pattern_Constructor/15.10.4.1_EmptyPattern/S15.10.4.1_T1.js";
         assertTrue((Boolean) cx.evaluateString(scope, source, sourceName, 0, null));
     }
 
     @Test
     public void testS15_10_4_1_T2_Undefined() {
         String source = "new RegExp(undefined).test('AA');";
-        String sourceName = "Conformance/15_Native/15.10_RegExp_Objects/15.10.4_Pattern_Semantics/15.10.2.11_DecimalEscape/S15.10.2.11_A1_T3.js";
+        String sourceName = "Conformance/15_Native/15.10_RegExp_Objects/15.10.4_Pattern_Constructor/15.10.4.1_UndefinedPattern/S15.10.4.1_T2_Undefined.js";
         assertTrue((Boolean) cx.evaluateString(scope, source, sourceName, 0, null));
     }
 }
